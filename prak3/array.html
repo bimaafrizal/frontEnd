@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var mhs = ["ani", "rendi", "sinta", "nisa"];
+        document.write("<h3>Daftar Mahasiswa:</h3>");
+        mhs.push("paijo"); //menambah dibelakang
+        mhs.splice(2, 1); //menghapus di index 2 sebanyak 1
+        mhs = mhs.sort(); //mengurutkan
+        mhs = mhs.filter(item => item.includes("ni")); //memfilter
+        document.write("<ol>");
+        for (let i = 0; i < mhs.length; i++) { //mencetak array
+            document.write("<li>" + mhs[i] + "</li>");
+        }
+
+        document.write("</ol>");
+    </script>
+</body>
+
+</html>

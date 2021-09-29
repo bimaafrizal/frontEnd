@@ -1,2 +1,2 @@
 document.write('hallo dari eksternal');
-alert("Hellom ini dari program eksternal!");
+alert("Hello ini dari program eksternal!");

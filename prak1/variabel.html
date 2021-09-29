@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Variabel dan tipe data</p>
+    <script>
+        var name = "Belajar Pemrograman JS";
+        var siteName = "D3 TI Sekolah Vokasi";
+        var url = "d3ti.vokasi.uns.ac.id";
+        var visitorCount = 1221;
+        var inActive = true;
+
+        document.write("Nama situs : " + siteName + "<hr>");
+        document.write("Jumlah pengunjung " + visitorCount + "<hr>");
+        document.write("Alamat URL: " + url + "<hr>");
+
+        //menampilkan type data
+        console.log(typeof name);
+        console.log(typeof visitorCount);
+        console.log(typeof inActive);
+
+        //menghapus variabel
+        delete name;
+        document.write("name : " + name + "<br>");
+    </script>
+    <hr>
+</body>
+
+</html>

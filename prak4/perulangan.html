@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var paragraf = document.getElementById('paragraf');
+        var warna = ["blue", "red"];
+        var tag = ["h1", "h2"];
+        var font = ["Courier New", "Arial"];
+
+        for (var start = 1; start <= 5; start++) {
+            var isi = document.createElement(tag[Math.floor(Math.random() * 2)]);
+            isi.textContent = "Say Hello";
+            isi.style.fontFamily = font[Math.floor(Math.random() * 2)];
+            isi.style.color = warna[Math.floor(Math.random() * 2)];
+            document.body.append(isi);
+        }
+    </script>
+</body>
+
+</html>

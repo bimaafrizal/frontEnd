@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var konfirmasi = confirm("Apakah anda akan membuat judul?");
+        if (konfirmasi) {
+            var judul = document.createElement("h1");
+            judul.textContent = "Membuat Judul";
+            document.body.append(judul)
+
+            var konfirmasi2 = confirm("Apakah diberi warna merah?");
+            if (konfirmasi2) {
+                judul.style.color = "red";
+            } else {
+
+            }
+            var isi = document.createElement("p");
+            isi.textContent = "Membuat isi";
+            document.body.append(isi);
+        }
+    </script>
+</body>
+
+</html>

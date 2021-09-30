@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="atas"></h1>
+    <script>
+        var judul = document.createElement("h1");
+        var subjudul = document.createElement("h2");
+        var isi = document.createElement("p");
+
+        judul.textContent = "Belajar JavaScript";
+        subjudul.textContent = "Belajar Javacript DOM";
+        isi.textContent = "isi Artikel";
+
+        document.body.append(judul);
+        document.body.append(isi);
+
+        var judulatas = document.getElementById('atas');
+        judulatas.remove();
+        console.log(judulatas);
+    </script>
+</body>
+
+</html>

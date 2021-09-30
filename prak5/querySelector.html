@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <a class="arah">ini A1</a> &nbsp;
+    <a class="arah">ini A2</a> &nbsp;
+    <a class="arah">ini A3</a>
+    <script>
+        let satu = document.querySelector('.arah');
+        console.log('satu:', satu);
+
+        let banyak = document.querySelectorAll('.arah');
+        console.log('banyak:', banyak);
+        satu.style.fontSize = 'xx-large';
+
+        for (let i = 0; i < banyak.length; i++) {
+            banyak[i].style.backgroundColor = 'yellow';
+        }
+    </script>
+
+    <h2></h2>
+    <p>Nama Lengkap :<input type='text' name='nama'></input>
+    </p>
+    <input type="button" onclick="tulis()" value="Tambah" />
+
+    <script>
+        function tulis() {
+            var data = document.querySelector('input[name=nama]');
+            var menulis = document.querySelector('h2');
+            menulis.innerHTML = data.value;
+        }
+    </script>
+</body>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <p>Nama Lengkap :<input type='text' name='nama'></input>
+    </p>
+    <input type="button" onclick="tulis()" value="TambahTerus" />
+
+    <script>
+        var dataTulis = [];
+
+        function tulis() {
+            var data = document.querySelector('input[name=nama]'); //menggunakan tag input dengan name nama
+            var menulis = document.querySelector('ul');
+            dataTulis.push("<li>" + data.value + "</li>");
+            text = "";
+            for (let i = 0; i < dataTulis.length; i++) {
+                text += dataTulis[i];
+            }
+            menulis.innerHTML = text;
+        }
+    </script>
+    <ul></ul>
+</body>

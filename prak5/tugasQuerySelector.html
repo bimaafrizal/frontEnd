@@ -1,0 +1,26 @@
+<head>
+    <title>DOM API</title>
+</head>
+
+<body>
+    <p>Nama Lengkap :<input type='text' name='nama'></input>
+    </p>
+    <input type="button" onclick="tulis()" value="TambahTerus" />
+    <table border='1'></table>
+    <script>
+        var no = 1;
+        var datatulis = [];
+
+        function tulis() {
+            var data = document.querySelector('input[name=nama]');
+            var menulis = document.querySelector('table');
+            text = "<tr><th>No</th><th>Nama Lengkap</th></tr>";
+            datatulis.push("<tr><td>" + no + "</td><td>" + data.value + "</td></tr>");
+            for (let i = 0; i < datatulis.length; i++) {
+                text += datatulis[i];
+            }
+            menulis.innerHTML = text;
+            no++
+        }
+    </script>
+</body>

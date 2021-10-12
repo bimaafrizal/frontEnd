@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Animal {
+            constructor(name, age) {
+                console.log("Hallo");
+                this.name = name;
+                this.age = age;
+            }
+            sapa() {
+                console.log("selamat pagi tuan");
+            }
+            info() {
+                console.log(`Nama saya adalah ${this.name} umur saya ${this.age}`);
+                this.sapa();
+            }
+        }
+        //instance
+        const animal = new Animal("arif", 3);
+        console.log(animal.name);
+        console.log(animal.age);
+        animal.sapa();
+        animal.info();
+
+        //pewarisan
+        class Anjing extends Animal {
+            //ovveriding constructor
+            constructor(name, age, breed) {
+                super(name, age);
+                this.breed = breed;
+            }
+
+            //overriding method
+            info() {
+                const humanAge = this.getAgeHuman();
+                console.log(`Halo namaku ${this.name} umurku sekarang  adalah ${humanAge} tahun dalam umur manusia`)
+                console.log(`Aku berjenis ${this.breed}`)
+            }
+            getAgeHuman() {
+                return this.age * 7;
+            }
+        }
+        const anjing = new Anjing("blacky", 1, "Alaska");
+        anjing.info();
+        console.log(anjing.getAgeHuman());
+    </script>
+</body>
+
+</html>

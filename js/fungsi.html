@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //fungsi dasar
+        const introduce = function() {
+            console.log("Hallo");
+            console.log("Nama saya Bima");
+        };
+        introduce();
+
+        //memanggil fungsi dengan cara lain
+        const introduce2 = () => {
+            console.log("Hallo");
+            console.log("Nama saya Bima");
+        };
+        introduce2();
+
+        //variabel dan argument
+        const introduce3 = (nama, umur) => {
+            console.log("Hallo");
+            console.log(`nama saya adalah ${nama} saya berusia ${umur}`);
+        };
+        introduce3("Bima", 19);
+
+        //return
+        const add = (a, b) => {
+            return a + b;
+        };
+        console.log(add(23, 27));
+    </script>
+</body>
+
+</html>

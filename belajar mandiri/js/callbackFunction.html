@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //callback digunakan untuk meneruskan fungsi sebagai argument
+        //Arguments adalah nilai yang ditampung dari seluruh argumen yang dikirimkan kepada sebuah fungsi.
+        const printken = () => {
+            console.log("Bima");
+        };
+
+        const call = (callback) => {
+            console.log("Memanggil fungsi callback");
+            callback();
+        };
+
+        call(printken);
+
+        //memanggil langsung callback langsung
+        call(() => {
+            console.log("Ninja Ken");
+        });
+
+        //meneruskan argument
+        const intrododuce = (callback) => {
+            callback("bima", 19);
+        }
+
+        intrododuce((name, age) => {
+            console.log(`${name} berusia ${age} tahun`)
+        });
+    </script>
+</body>
+
+</html>

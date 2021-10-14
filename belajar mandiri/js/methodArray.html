@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const numbers = [1, 2, 3];
+        //push
+        numbers.push(4);
+        console.log(numbers);
+
+        //foreach
+        numbers.forEach((number) => {
+            console.log(number)
+        });
+
+        //find
+        //untuk mencari isi array yang ssuai dengan dengan kondisi
+        const foundNumber = numbers.find((number) => {
+            return number > 3;
+        });
+
+        const characters = [{
+            id: 1,
+            name: "bima"
+        }, {
+            id: 2,
+            name: "afrizal"
+        }];
+
+        const foundCharacter = characters.find((character) => {
+            return character.id === 1;
+        });
+        console.log(foundCharacter);
+
+        //filter
+        const filteredNumbers = numbers.filter((number) => {
+            return number > 3;
+        });
+        //akan membentuk array
+        console.log(filteredNumbers);
+
+        //map
+        //menerapkan fungsi yang sama pada array
+        const doubleNumbers = numbers.map((number) => {
+            return number * 2;
+        });
+        console.log(doubleNumbers);
+    </script>
+</body>
+
+</html>

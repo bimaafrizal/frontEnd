@@ -1,5 +1,5 @@
 //import class
-import Animal from "./animal";
+import Animal from "./animal.js";
 
 class Anjing extends Animal {
     //ovveriding constructor
@@ -18,3 +18,4 @@ class Anjing extends Animal {
         return this.age * 7;
     }
 }
+export default Anjing;

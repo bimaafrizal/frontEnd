@@ -1,0 +1,15 @@
+{
+    "name": "belajarlur",
+    "version": "14.18.1",
+    "description": "",
+    "main": "script.js",
+    "type": "module",
+    "scripts": {
+        "test": "start-dev"
+    },
+    "keywords": [
+        "test"
+    ],
+    "author": "Users",
+    "license": "ISC"
+}

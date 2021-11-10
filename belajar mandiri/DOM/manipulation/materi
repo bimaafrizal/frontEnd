@@ -1,0 +1,42 @@
+memanipulasi element
+
+element.innerHTML -> merubah isi dari teks
+element.style.<property> -> merubah style css
+element.setAtribute() -> memanipulas attribute
+element.classList ->manipulasi claass
+
+
+# p2.classList.add('label');
+# undefined
+# p2.classList.remove('label');
+# undefined
+# p2.classList
+# DOMTokenList ['p2', value: 'p2']
+# p2.classList.add('label');
+# undefined
+# p2.classList
+# DOMTokenList(2) ['p2', 'label', value: 'p2 label']
+# p2.classList.remove('label');
+# undefined
+# p2.classList
+# DOMTokenList ['p2', value: 'p2']
+# p2.classList.toggle('label');
+# true
+# p2.classList.toggle('label');
+# false
+# document.body.classList.toggle('biru-muda);
+# VM1337:1 Uncaught SyntaxError: Invalid or unexpected token
+# document.body.classList.toggle('biru-muda');
+# true
+# p2.classList.item(2)
+# 'dua'
+# p2.classList.contains('dua')
+# true
+
+memanipulasi node
+document.createElement()
+document.createTextNode
+node.appeendChild
+node.insertBefore
+parentNode.removeChild
+parentNode.replaceChild

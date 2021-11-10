@@ -1,0 +1,7 @@
+Bisa menggunakan:
+    getElementById()                menghasilkan element
+    getElementsByTagName()          menghasilkan HTMLCollection
+    getElementsByClassName()        menghasilkan HTMLCollection
+    querySelector()                 menghasilkan element
+    querySelectorAll()              menghasilkan nodeList
+

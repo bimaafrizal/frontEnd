@@ -1,0 +1,12 @@
+Asynchronus -> biasa disebut blocking karena 
+harus menunggu tiap proses selesai baru proses selanjutnya
+
+//setTimeout -> untuk menjalankan proses Async sekali pada waktu tertentu
+//setInterval -> untuk menjalankan proses Async secara periodik dalam waktu tertentu
+
+ajax-> ajax adalah Asynchronus javascript and XML
+digunakan untuk mengambil data dari server setelah web tampil
+ajax dapat digunakan untuk mengubah tampilan web tanpa harus me-load ulang web
+ajax dapat mengirimkan data ke server secara asyn di background
+
+ajax callback 

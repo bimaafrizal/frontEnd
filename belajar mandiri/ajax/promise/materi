@@ -1,0 +1,12 @@
+state                   Result
+untuk definisi tahapan  hasilnya
+tahapan:
+pending                 undefined
+fulldilled              value(kalau berhasil)
+rejected                error(kalau gagal)                
+
+Promise Finally
+untuk menjalankan kode tertentu ketika sukses atau error
+
+Promise All method
+All method digunakan untuk menggabungkan beberapa Promise menjadi promise baru yang terdiri dari data Array hasil Promise tersebut.
